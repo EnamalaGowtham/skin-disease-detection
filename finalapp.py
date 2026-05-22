@@ -1562,7 +1562,7 @@ def main():
             
             folder_name = CLASS_TO_FOLDER.get(disease_name)
             if folder_name:
-                gallery_path = os.path.join("dataset", "test", folder_name)
+                gallery_path = os.path.join("gallery_images", folder_name)
                 if os.path.exists(gallery_path):
                     import random
                     all_images = [f for f in os.listdir(gallery_path) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
