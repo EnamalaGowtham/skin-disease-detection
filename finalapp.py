@@ -1459,29 +1459,29 @@ def main():
                 
                 st.markdown(f"""
 <div style="background: rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.15); border-radius:20px; padding:2rem; margin:1.5rem 0; backdrop-filter:blur(20px);">
-    <h3 style="background: linear-gradient(135deg, #6366f1, #8b5cf6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:0.5rem;">🩹 First Aid & Precautions</h3>
-    <p style="color:{severity_color}; font-weight:600; margin-bottom:1rem;">Severity: {info["severity"]}</p>
-    
-    <div style="background:rgba(99,102,241,0.08); border-left:4px solid #6366f1; border-radius:12px; padding:1.25rem; margin-bottom:1rem;">
-        <h4 style="color:#a5b4fc; margin-bottom:0.75rem;">⚡ Immediate Steps</h4>
-        <ul style="color:#d1d5db; padding-left:1.5rem; margin:0;">{first_aid_html}</ul>
-    </div>
-    
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
-        <div style="background:rgba(16,185,129,0.08); border-left:4px solid #10b981; border-radius:12px; padding:1.25rem;">
-            <h4 style="color:#6ee7b7; margin-bottom:0.75rem;">✅ Do's</h4>
-            <ul style="color:#d1d5db; padding-left:1.25rem; margin:0; font-size:0.9rem;">{do_html}</ul>
-        </div>
-        <div style="background:rgba(239,68,68,0.08); border-left:4px solid #ef4444; border-radius:12px; padding:1.25rem;">
-            <h4 style="color:#fca5a5; margin-bottom:0.75rem;">❌ Don'ts</h4>
-            <ul style="color:#d1d5db; padding-left:1.25rem; margin:0; font-size:0.9rem;">{dont_html}</ul>
-        </div>
-    </div>
-    
-    <div style="background:rgba(245,158,11,0.08); border-left:4px solid #f59e0b; border-radius:12px; padding:1.25rem;">
-        <h4 style="color:#fcd34d; margin-bottom:0.5rem;">🏥 When to See a Doctor</h4>
-        <p style="color:#d1d5db; margin:0;">{info["see_doctor"]}</p>
-    </div>
+<h3 style="background: linear-gradient(135deg, #6366f1, #8b5cf6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:0.5rem;">🩹 First Aid & Precautions</h3>
+<p style="color:{severity_color}; font-weight:600; margin-bottom:1rem;">Severity: {info["severity"]}</p>
+
+<div style="background:rgba(99,102,241,0.08); border-left:4px solid #6366f1; border-radius:12px; padding:1.25rem; margin-bottom:1rem;">
+<h4 style="color:#a5b4fc; margin-bottom:0.75rem;">⚡ Immediate Steps</h4>
+<ul style="color:#d1d5db; padding-left:1.5rem; margin:0;">{first_aid_html}</ul>
+</div>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+<div style="background:rgba(16,185,129,0.08); border-left:4px solid #10b981; border-radius:12px; padding:1.25rem;">
+<h4 style="color:#6ee7b7; margin-bottom:0.75rem;">✅ Do's</h4>
+<ul style="color:#d1d5db; padding-left:1.25rem; margin:0; font-size:0.9rem;">{do_html}</ul>
+</div>
+<div style="background:rgba(239,68,68,0.08); border-left:4px solid #ef4444; border-radius:12px; padding:1.25rem;">
+<h4 style="color:#fca5a5; margin-bottom:0.75rem;">❌ Don'ts</h4>
+<ul style="color:#d1d5db; padding-left:1.25rem; margin:0; font-size:0.9rem;">{dont_html}</ul>
+</div>
+</div>
+
+<div style="background:rgba(245,158,11,0.08); border-left:4px solid #f59e0b; border-radius:12px; padding:1.25rem;">
+<h4 style="color:#fcd34d; margin-bottom:0.5rem;">🏥 When to See a Doctor</h4>
+<p style="color:#d1d5db; margin:0;">{info["see_doctor"]}</p>
+</div>
 </div>
 
 <div style="background:rgba(239,68,68,0.05); border:1px solid rgba(239,68,68,0.2); border-radius:12px; padding:1rem; margin:1rem 0; text-align:center;">
@@ -1500,34 +1500,34 @@ def main():
                 
                 st.markdown(f"""
 <div style="background: rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.15); border-radius:20px; padding:2rem; margin:1.5rem 0; backdrop-filter:blur(20px);">
-    <h3 style="background: linear-gradient(135deg, #06b6d4, #3b82f6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:0.5rem;">📋 Disease Information</h3>
-    <p style="color:#d1d5db; margin-bottom:1.25rem; line-height:1.6;">{details["description"]}</p>
-    
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
-        <div style="background:rgba(239,68,68,0.06); border-left:4px solid #ef4444; border-radius:12px; padding:1.25rem;">
-            <h4 style="color:#fca5a5; margin-bottom:0.75rem;">🔬 Common Causes</h4>
-            <ul style="color:#d1d5db; padding-left:1.25rem; margin:0; font-size:0.88rem;">{causes_html}</ul>
-        </div>
-        <div style="background:rgba(168,85,247,0.06); border-left:4px solid #a855f7; border-radius:12px; padding:1.25rem;">
-            <h4 style="color:#c4b5fd; margin-bottom:0.75rem;">🩺 Key Symptoms</h4>
-            <ul style="color:#d1d5db; padding-left:1.25rem; margin:0; font-size:0.88rem;">{symptoms_html}</ul>
-        </div>
-    </div>
-    
-    <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem;">
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:1rem; text-align:center;">
-            <p style="color:#9ca3af; font-size:0.75rem; margin:0 0 0.25rem 0; text-transform:uppercase;">Contagious?</p>
-            <p style="color:{contagious_color}; font-weight:600; margin:0; font-size:0.9rem;">{details["contagious"]}</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:1rem; text-align:center;">
-            <p style="color:#9ca3af; font-size:0.75rem; margin:0 0 0.25rem 0; text-transform:uppercase;">Prevalence</p>
-            <p style="color:#93c5fd; font-weight:500; margin:0; font-size:0.85rem;">{details["prevalence"]}</p>
-        </div>
-        <div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:1rem; text-align:center;">
-            <p style="color:#9ca3af; font-size:0.75rem; margin:0 0 0.25rem 0; text-transform:uppercase;">Affected Areas</p>
-            <p style="color:#fcd34d; font-weight:500; margin:0; font-size:0.85rem;">{details["affected_areas"]}</p>
-        </div>
-    </div>
+<h3 style="background: linear-gradient(135deg, #06b6d4, #3b82f6); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:0.5rem;">📋 Disease Information</h3>
+<p style="color:#d1d5db; margin-bottom:1.25rem; line-height:1.6;">{details["description"]}</p>
+
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+<div style="background:rgba(239,68,68,0.06); border-left:4px solid #ef4444; border-radius:12px; padding:1.25rem;">
+<h4 style="color:#fca5a5; margin-bottom:0.75rem;">🔬 Common Causes</h4>
+<ul style="color:#d1d5db; padding-left:1.25rem; margin:0; font-size:0.88rem;">{causes_html}</ul>
+</div>
+<div style="background:rgba(168,85,247,0.06); border-left:4px solid #a855f7; border-radius:12px; padding:1.25rem;">
+<h4 style="color:#c4b5fd; margin-bottom:0.75rem;">🩺 Key Symptoms</h4>
+<ul style="color:#d1d5db; padding-left:1.25rem; margin:0; font-size:0.88rem;">{symptoms_html}</ul>
+</div>
+</div>
+
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem;">
+<div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:1rem; text-align:center;">
+<p style="color:#9ca3af; font-size:0.75rem; margin:0 0 0.25rem 0; text-transform:uppercase;">Contagious?</p>
+<p style="color:{contagious_color}; font-weight:600; margin:0; font-size:0.9rem;">{details["contagious"]}</p>
+</div>
+<div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:1rem; text-align:center;">
+<p style="color:#9ca3af; font-size:0.75rem; margin:0 0 0.25rem 0; text-transform:uppercase;">Prevalence</p>
+<p style="color:#93c5fd; font-weight:500; margin:0; font-size:0.85rem;">{details["prevalence"]}</p>
+</div>
+<div style="background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:1rem; text-align:center;">
+<p style="color:#9ca3af; font-size:0.75rem; margin:0 0 0.25rem 0; text-transform:uppercase;">Affected Areas</p>
+<p style="color:#fcd34d; font-weight:500; margin:0; font-size:0.85rem;">{details["affected_areas"]}</p>
+</div>
+</div>
 </div>
 """, unsafe_allow_html=True)
         
