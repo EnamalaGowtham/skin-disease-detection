@@ -1,6 +1,1 @@
-libgl1
-libglib2.0-0
-libsm6
-libxext6
-libxrender-dev
-libgomp1 
+# No additional apt packages are needed because we are using opencv-python-headless. 
